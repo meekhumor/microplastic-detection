@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import ApiService from './services/api';
 
+
 // Import the new, separated components
 import Header from './components/layout/Header';
 import Sidebar from './components/layout/Sidebar';
