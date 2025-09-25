@@ -18,21 +18,21 @@ const Navbar = ({ activeTab, setActiveTab }) => {
           <button
             onClick={() => setActiveTab('dashboard')}
             title="Dashboard"
-            className="p-2 rounded-md hover:bg-blue-700 transition-colors"
+            className="p-3 hover:bg-black transition-colors"
           >
             <Home size={20} />
           </button>
           
-          <div className="h-6 border-l border-blue-600"></div>
+          <div className="h-6 border-l border-black"></div>
 
           {navItems.map(({ id, label }) => (
             <button
               key={id}
               onClick={() => setActiveTab(id)}
-              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+              className={`px-5 py-3 text-sm font-medium transition-colors ${
                 activeTab === id 
-                  ? 'bg-blue-700' 
-                  : 'hover:bg-blue-700'
+                  ? 'bg-black' 
+                  : 'hover:bg-black'
               }`}
             >
               {label}
