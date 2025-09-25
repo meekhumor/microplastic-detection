@@ -6,11 +6,11 @@ import ApiService from './services/api';
 
 // Import the new, separated components
 import Header from './components/layout/Header';
-import Sidebar from './components/layout/Sidebar';
 import DashboardPage from './components/pages/DashboardPage';
 import AnalyticsPage from './components/pages/AnalyticsPage';
 import DataUploadPage from './components/pages/DataUploadPage';
 import ReportsPage from './components/pages/ReportsPage';
+import Navbar from './components/layout/Navbar'; 
 
 const MicroplasticPlatform = () => {
   // --- STATE MANAGEMENT ---
@@ -84,10 +84,10 @@ const MicroplasticPlatform = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header connectionStatus={connectionStatus} error={error} />
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <Header error={error} />
+      <Navbar activeTab={activeTab} setActiveTab={setActiveTab} />
+      <main className="max-w-10xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex">
-          <Sidebar activeTab={activeTab} setActiveTab={setActiveTab} />
           <div className="flex-1">
             {renderContent()}
           </div>
