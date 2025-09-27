@@ -48,11 +48,11 @@ const Header = ({error }) => (
           <div className="flex items-center space-x-6">
             
             {/* Partner Logos Section */}
-            <div className="hidden md:flex items-center space-x-4">
+            <div className="hidden md:flex items-center">
               <img 
                 src="img.png" 
                 alt="Swachh Bharat Abhiyan Logo" 
-                className="h-20 object-contain"
+                className="h-16 object-contain"
               />
             </div> 
 

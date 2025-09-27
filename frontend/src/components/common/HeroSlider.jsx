@@ -5,7 +5,6 @@ const slides = [
   {
     title: "Real-time Water Quality Monitoring",
     description: "Tracking microplastic concentrations across key locations in Maharashtra.",
-    // Path starts with "/" to reference the public folder
     imageUrl: "slider1.png", 
     textColor: "text-white"
   },
